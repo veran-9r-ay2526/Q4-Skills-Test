@@ -1,16 +1,20 @@
 function showLoginHelp() {
-    alert("Username is Markiplier and Password is Soupify2024");
+    alert("Username is Student101 and Password is UNTITLED05");
 }
 function login() {
     const username = document.getElementById("usernameInp").value;
     const password = document.getElementById("passwordInp").value;
     const messageElem = document.getElementById("loginMessage");
-    if (password === "Soupify2024" && username === "Markiplier") {
-        document.getElementById("loginMessage").textContent = "Login successful! Welcome, " + username + ".";
-        document.getElementById("loginMessage").style.color = "green";
-    } else {
-        document.getElementById("loginMessage").textContent = "Incorrect Username or Password. Please try again.";
-        document.getElementById("loginMessage").style.color = "red";
+
+    switch (true) {
+        case (username === "Student101" && password === "UNTITLED05"):
+            messageElem.textContent = "Login successful! Welcome, " + username + ".";
+            messageElem.style.color = "green";
+            window.location.href = "index.html";
+            break;
+        default:
+            messageElem.textContent = "Incorrect Username or Password. Please try again.";
+            messageElem.style.color = "red";
     }
 }
 function toggleVisi(){
