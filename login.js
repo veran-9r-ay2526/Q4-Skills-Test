@@ -10,7 +10,7 @@ function login() {
         case (username === "Student101" && password === "UNTITLED05"):
             messageElem.textContent = "Login successful! Welcome, " + username + ".";
             messageElem.style.color = "green";
-            window.location.href = "index.html";
+            window.location.href = "notebook.html";
             break;
         default:
             messageElem.textContent = "Incorrect Username or Password. Please try again.";
